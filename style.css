@@ -1,4 +1,8 @@
 /* common style */
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     background: #F3F1FF;
 }
@@ -148,3 +152,42 @@ footer{
     ;
 }
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .container{
+        width: 100%;
+    }
+    .main-header{
+        display: none;
+    }
+    .top-players{
+        margin-top: 20px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .top-blogs{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .courses{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media only screen and (min-width: 600px) and (max-width:900px){
+    .main-nav{
+        width: 70%;
+    }
+    .container{
+        width: 90%;
+    }
+    .top-blogs{
+        margin-top: 20px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .top-players{
+        margin-top: 20px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .courses{
+        margin-bottom: 20px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
